@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Key:</strong>
+  <%= @ap_ikey.key %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @ap_ikey.user %>
+</p>
+
+<%= link_to 'Edit', edit_ap_ikey_path(@ap_ikey) %> |
+<%= link_to 'Back', ap_ikeys_path %>

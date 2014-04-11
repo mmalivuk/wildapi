@@ -1,0 +1,29 @@
+<h1>Listing ap_ikeys</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>User</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @ap_ikeys.each do |ap_ikey| %>
+      <tr>
+        <td><%= ap_ikey.key %></td>
+        <td><%= ap_ikey.user %></td>
+        <td><%= link_to 'Show', ap_ikey %></td>
+        <td><%= link_to 'Edit', edit_ap_ikey_path(ap_ikey) %></td>
+        <td><%= link_to 'Destroy', ap_ikey, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Ap ikey', new_ap_ikey_path %>
