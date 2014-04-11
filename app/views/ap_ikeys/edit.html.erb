@@ -1,6 +1,5 @@
-<h1>Editing ap_ikey</h1>
-
-<%= render 'form' %>
-
-<%= link_to 'Show', @ap_ikey %> |
-<%= link_to 'Back', ap_ikeys_path %>
+<%- model_class = APIkey -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => [:'helpers.titles.edit', 'Edit %{model}'], :model => APIkey %></h1>
+</div>
+<%= render :partial => 'form' %>
